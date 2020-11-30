@@ -1,11 +1,11 @@
 @extends('admin.admin_layout')
 
 @section('admin_content')
-<div class="container">
+<div class="container"><br> <br> <br><br>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><strong>Admin</strong> Change Password</div>
+                <div class="card-header"><strong>Change Password</strong> </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ Route('admin.password.update') }}" aria-label="{{ __('Reset Password') }}">

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
 });
 
 Auth::routes();
@@ -22,7 +22,7 @@ Route::get('/user/logout', 'HomeController@Logout')->name('user.logout');
 
 //----------------Admin Routes------------------//
 
-Route::get('admin/home', 'AdminController@index');
+Route::get('admin/home', 'AdminController@index')->name('admin.home');
 Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin', 'Admin\LoginController@login');
         //--------Paswords reset route----//

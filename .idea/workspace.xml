@@ -118,18 +118,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/frontend/images" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend\images" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Model\Admin" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\backend" />
     </key>
   </component>
@@ -149,7 +154,7 @@
       <updated>1606383806802</updated>
       <workItem from="1606383807901" duration="2002000" />
       <workItem from="1606389819852" duration="33321000" />
-      <workItem from="1606674394783" duration="1385000" />
+      <workItem from="1606674394783" duration="14662000" />
     </task>
     <servers />
   </component>
@@ -157,6 +162,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606710198133">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606710198133" />
+    <state x="1835" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606682067127">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1835" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606682067127" />
     <state x="1802" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606456351830">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -177,5 +190,13 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state width="1306" height="263" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606384079964" />
+    <state x="1550" y="8" key="SettingsEditor" timestamp="1606684673857">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1550" y="8" key="SettingsEditor/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606684673857" />
+    <state x="1756" y="97" width="585" height="534" key="find.popup" timestamp="1606685868755">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1756" y="97" width="585" height="534" key="find.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606685868755" />
   </component>
 </project>
