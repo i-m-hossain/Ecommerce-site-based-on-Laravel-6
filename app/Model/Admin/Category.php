@@ -11,4 +11,7 @@ class Category extends Model
         'category_name'
 
     ];
+    public function subcategory(){
+        return $this->hasMany('App\Model\Admin\Subcategory');
+    }
 }

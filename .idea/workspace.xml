@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c525f737-9183-4280-b9c3-6e1d57673df2" name="Default Changelist" comment="" />
+    <list default="true" id="c525f737-9183-4280-b9c3-6e1d57673df2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubcategoryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Admin/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Admin/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Admin/Subcategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Admin/Subcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +21,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -116,26 +130,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/frontend/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Good Projects/blogwebsite" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Brand" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Subcategory" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Category" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth\category" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend\images" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Model\Admin" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -154,7 +170,17 @@
       <updated>1606383806802</updated>
       <workItem from="1606383807901" duration="2002000" />
       <workItem from="1606389819852" duration="33321000" />
-      <workItem from="1606674394783" duration="14662000" />
+      <workItem from="1606674394783" duration="25355000" />
+      <workItem from="1606728674103" duration="857000" />
+      <workItem from="1606732867719" duration="633000" />
+      <workItem from="1606733659069" duration="8976000" />
+      <workItem from="1606920840146" duration="549000" />
+      <workItem from="1606921747382" duration="2530000" />
+      <workItem from="1606933891647" duration="736000" />
+      <workItem from="1606935292406" duration="3489000" />
+      <workItem from="1606966961584" duration="40010000" />
+      <workItem from="1607196252236" duration="731000" />
+      <workItem from="1607206165512" duration="14500000" />
     </task>
     <servers />
   </component>
@@ -162,18 +188,26 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606710198133">
+    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607107167663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1606710198133" />
+    <state x="452" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1607107167663" />
     <state x="1835" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606682067127">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1835" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606682067127" />
-    <state x="1802" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606456351830">
+    <state x="436" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607142607655">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="436" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1606974458931" />
+    <state x="1802" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606456351830" />
+    <state x="436" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607142607655" />
+    <state x="1829" y="118" key="FileChooserDialogImpl" timestamp="1607358646080">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1802" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606456351830" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1606973666901" />
+    <state x="1829" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607358646080" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607144101462" />
     <state width="1306" height="263" key="GridCell.Tab.0.bottom" timestamp="1606384079964">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -198,5 +232,13 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1756" y="97" width="585" height="534" key="find.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606685868755" />
+    <state x="1705" y="162" key="run.anything.popup" timestamp="1606753100726">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606753100726" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606937547672">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606937547672" />
   </component>
 </project>

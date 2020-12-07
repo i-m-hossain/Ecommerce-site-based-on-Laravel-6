@@ -25,7 +25,9 @@ Route::get('/user/logout', 'HomeController@Logout')->name('user.logout');
 Route::get('admin/home', 'AdminController@index')->name('admin.home');
 Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin', 'Admin\LoginController@login');
-        //--------Paswords reset route----//
+
+    //--------Passwords reset route----//
+
 Route::get('admin/password/reset', 'Admin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
 Route::post('admin-password/email', 'Admin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
 Route::get('admin/reset/password/{token}', 'Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');
@@ -34,5 +36,11 @@ Route::get('/admin/Change/Password','AdminController@ChangePassword')->name('adm
 Route::post('/admin/password/update','AdminController@Update_pass')->name('admin.password.update');
 
 Route::get('admin/logout', 'AdminController@Logout')->name('admin.logout');
+
+    //-------------categories-----------//
+
+Route::resource('admin/categories', 'Admin\Category\CategoryController');
+Route::resource('admin/brands', 'Admin\Category\BrandController');
+Route::resource('admin/subcategories', 'Admin\Category\SubcategoryController');
 
 

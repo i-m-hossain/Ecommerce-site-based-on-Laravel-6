@@ -35,8 +35,13 @@
     <link href="{{asset('backend/lib/Ionicons/css/ionicons.css')}}" rel="stylesheet">
     <link href="{{asset('/backend/lib/perfect-scrollbar/css/perfect-scrollbar.css')}}" rel="stylesheet">
     <link href="{{asset('/backend/lib/rickshaw/rickshaw.min.css')}}" rel="stylesheet">
+    <!----- toastr---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
 
+    <!----Datatabhle----->
+    <link href="{{asset('/backend/lib/highlightjs/github.css')}}" rel="stylesheet">
+    <link href="{{asset('/backend/lib/datatables/jquery.dataTables.css')}}" rel="stylesheet">
+    <link href="{{asset('/backend/lib/select2/css/select2.min.css')}}" rel="stylesheet">
     <!-- Starlight CSS -->
     <link rel="stylesheet" href="{{asset('/backend/css/starlight.css')}}">
 </head>
@@ -74,9 +79,9 @@
                 </div><!-- menu-item -->
             </a><!-- sl-menu-link -->
             <ul class="sl-menu-sub nav flex-column">
-                <li class="nav-item"><a href="chart-morris.html" class="nav-link">Category</a></li>
-                <li class="nav-item"><a href="chart-flot.html" class="nav-link">Sub Catergory</a></li>
-                <li class="nav-item"><a href="chart-chartjs.html" class="nav-link">Brand</a></li>
+                <li class="nav-item"><a href="{{route('categories.index')}}" class="nav-link">Category</a></li>
+                <li class="nav-item"><a href="{{route('subcategories.index')}}" class="nav-link">Sub Catergory</a></li>
+                <li class="nav-item"><a href="{{route('brands.index')}}" class="nav-link">Brand</a></li>
 
             </ul>
             <a href="#" class="sl-menu-link">
@@ -362,6 +367,40 @@
 <script src="{{asset('/backend/lib/bootstrap/bootstrap.js')}}"></script>
 <script src="{{asset('/backend/lib/jquery-ui/jquery-ui.js')}}"></script>
 <script src="{{asset('/backend/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js')}}"></script>
+
+<!------Datatables javascript-------->
+<script src="{{asset('/backend/lib/highlightjs/highlight.pack.js')}}"></script>
+<script src="{{asset('/backend/lib/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('/backend/lib/datatables-responsive/dataTables.responsive.js')}}"></script>
+<script src="{{asset('/backend/lib/select2/js/select2.min.js')}}"></script>
+
+{{--Pagination-> 10 item/page--}}
+
+<script>
+    $(function(){
+        'use strict';
+
+        $('#datatable1').DataTable({
+            responsive: true,
+            language: {
+                searchPlaceholder: 'Search...',
+                sSearch: '',
+                lengthMenu: '_MENU_ items/page',
+            }
+        });
+
+        $('#datatable2').DataTable({
+            bLengthChange: false,
+            searching: false,
+            responsive: true
+        });
+
+        // Select2
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+    });
+</script>
+
 <script src="{{asset('/backend/lib/jquery.sparkline.bower/jquery.sparkline.min.js')}}"></script>
 <script src="{{asset('/backend/lib/d3/d3.js')}}"></script>
 <script src="{{asset('/backend/lib/rickshaw/rickshaw.min.js')}}"></script>
@@ -371,10 +410,13 @@
 <script src="{{asset('/backendlib/Flot/jquery.flot.resize.js')}}/"></script>
 <script src="{{asset('/backend/lib/flot-spline/jquery.flot.spline.js')}}"></script>
 <script src= "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script src="{{asset('/backend/js/starlight.js')}}"></script>
 <script src="{{asset('/backend/js/ResizeSensor.js')}}"></script>
 <script src="{{asset('/backend/js/dashboard.js')}}"></script>
 
+{{--Toastr Notification--}}
 <script>
     @if(Session::has('message'))
     var type="{{Session::get('alert-type','info')}}"
@@ -394,5 +436,32 @@
     }
     @endif
 </script>
+
+{{--Delete Prompt--}}
+<script>
+    $(document).on('click','#delete', function(e) {
+        e.preventDefault();
+        let action = $(this).data('action');
+        // alert(action);
+        var userId = $(this).data('id');
+        swal({
+            title: "Are you Want to delete?",
+            text: "Once Delete, This will be Permanently Delete!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+
+        }).then(function (result) {
+            if(result){
+                $('#form').attr('action',action).submit();
+            }else{
+                swal("Safe Data!");
+            }
+
+        });
+    });
+
+</script>
+
 </body>
 </html>
