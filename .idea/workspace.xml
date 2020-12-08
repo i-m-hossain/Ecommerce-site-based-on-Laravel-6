@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c525f737-9183-4280-b9c3-6e1d57673df2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubcategoryController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Admin/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Admin/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Admin/Subcategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Admin/Subcategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin_layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin_layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,25 +130,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Good Projects/blogwebsite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth\category" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend\images" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend" />
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Brand" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Subcategory" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin\Category" />
       <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth\category" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend\images" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\public\frontend" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\resources\views\admin\auth" />
-      <recent name="F:\Web Site Development\Project\Dream Project\ecommerce6\app\Http\Controllers\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,7 +177,10 @@
       <workItem from="1606935292406" duration="3489000" />
       <workItem from="1606966961584" duration="40010000" />
       <workItem from="1607196252236" duration="731000" />
-      <workItem from="1607206165512" duration="14500000" />
+      <workItem from="1607206165512" duration="22298000" />
+      <workItem from="1607408119903" duration="1570000" />
+      <workItem from="1607419205978" duration="7117000" />
+      <workItem from="1607451859895" duration="4862000" />
     </task>
     <servers />
   </component>
@@ -202,12 +202,12 @@
     <state x="436" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1606974458931" />
     <state x="1802" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606456351830" />
     <state x="436" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607142607655" />
-    <state x="1829" y="118" key="FileChooserDialogImpl" timestamp="1607358646080">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1607408137388">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1606973666901" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1607408137388" />
     <state x="1829" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607358646080" />
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607144101462" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607404838796" />
     <state width="1306" height="263" key="GridCell.Tab.0.bottom" timestamp="1606384079964">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -232,10 +232,10 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1756" y="97" width="585" height="534" key="find.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606685868755" />
-    <state x="1705" y="162" key="run.anything.popup" timestamp="1606753100726">
+    <state x="1705" y="162" key="run.anything.popup" timestamp="1607454704625">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
-    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1606753100726" />
+    <state x="1705" y="162" key="run.anything.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1607454704625" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606937547672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

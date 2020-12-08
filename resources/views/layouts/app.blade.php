@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/styles/main_styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/frontend/styles/responsive.css') }}">
 
+    {{--    toastr notification--}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" />
+
 </head>
 
 <body>
@@ -186,9 +189,10 @@
                             <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
                         </div>
                         <div class="newsletter_content clearfix">
-                            <form action="#" class="newsletter_form">
-                                <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
-                                <button class="newsletter_button">Subscribe</button>
+                            <form action="{{route('newsletter.store')}}" method="post" class="newsletter_form">
+                                @csrf
+                                <input type="email"  name="email" class="newsletter_input" required="required" placeholder="Enter your email address">
+                                <button type="submit" class="newsletter_button">Subscribe</button>
                             </form>
                             <div class="newsletter_unsubscribe_link"><a href="#">unsubscribe</a></div>
                         </div>
@@ -314,6 +318,33 @@
 <script src="{{ asset('/frontend/plugins/slick-1.8.0/slick.js')}}"></script>
 <script src="{{ asset('/frontend/plugins/easing/easing.js')}}"></script>
 <script src="{{ asset('/frontend/js/custom.js')}}"></script>
+
+
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+{{--Toastr Notification--}}
+<script>
+    @if(Session::has('message'))
+    var type="{{Session::get('alert-type','info')}}"
+    switch(type){
+        case 'info':
+            toastr.info("{{ Session::get('message') }}");
+            break;
+        case 'success':
+            toastr.success("{{ Session::get('message') }}");
+            break;
+        case 'warning':
+            toastr.warning("{{ Session::get('message') }}");
+            break;
+        case 'error':
+            toastr.error("{{ Session::get('message') }}");
+            break;
+    }
+    @endif
+</script>
+
 </body>
 
 </html>

@@ -39,8 +39,17 @@ Route::get('admin/logout', 'AdminController@Logout')->name('admin.logout');
 
     //-------------categories-----------//
 
-Route::resource('admin/categories', 'Admin\Category\CategoryController');
-Route::resource('admin/brands', 'Admin\Category\BrandController');
-Route::resource('admin/subcategories', 'Admin\Category\SubcategoryController');
+Route::resource('admin/categories', 'Admin\Category\CategoryController')->except('show');
+Route::resource('admin/brands', 'Admin\Category\BrandController')->except('show');
+Route::resource('admin/subcategories', 'Admin\Category\SubcategoryController')->except('show');
+
+    //-------------coupon---------------//
+Route::resource('admin/coupons', 'Admin\Coupon\CouponController')->except('show');
+
+    //-----------Newsletter---------//
+Route::resource('admin/newsletter','Admin\Newsletter\NewsletterController')->except(['create','show','edit','update']);
+
+
+
 
 
